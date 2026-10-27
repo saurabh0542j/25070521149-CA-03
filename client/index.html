@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234f46e5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'/><path d='M12 10v6'/><path d='m9 13 3-3 3 3'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Smart File Manager - Secure, modern, and lightning-fast cloud storage and document management system." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>Smart File Manager | Cloud Hub</title>
+    <script>
+      // If user opened directly via Live Server (port 5500), forward them to Vite dev server (port 5173)
+      if (window.location.port === '5500' || window.location.protocol === 'file:') {
+        window.location.replace("http://localhost:5173");
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-indigo-500 selection:text-white transition-colors duration-200">
+    <div id="root">
+      <!-- Fallback message for Live Server static viewers -->
+      <noscript>
+        <div style="font-family: sans-serif; text-align: center; padding: 50px;">
+          <h2>JavaScript is required to run Smart File Manager</h2>
+        </div>
+      </noscript>
+      <div id="live-server-helper" style="display: none; font-family: Inter, sans-serif; text-align: center; padding: 60px 20px;">
+        <div style="max-width: 460px; margin: 0 auto; background: #0f172a; color: white; padding: 36px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+          <div style="font-size: 36px; margin-bottom: 12px;">📁</div>
+          <h2 style="margin: 0 0 10px; font-size: 20px;">Open on Port 5173</h2>
+          <p style="color: #94a3b8; font-size: 13px; line-height: 1.6; margin-bottom: 24px;">
+            React & Vite applications cannot run on static Live Server (port 5500). Please open the running Vite server:
+          </p>
+          <a href="http://localhost:5173" style="display: inline-block; background: #4f46e5; color: white; text-decoration: none; font-weight: 600; font-size: 14px; padding: 12px 24px; border-radius: 12px;">
+            👉 Open http://localhost:5173
+          </a>
+        </div>
+      </div>
+      <script>
+        if (window.location.port === '5500') {
+          document.getElementById('live-server-helper').style.display = 'block';
+        }
+      </script>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
